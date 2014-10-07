@@ -1,0 +1,47 @@
+/* Round Picture
+================================================== */
+
+.picture {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.round-pic {
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 1s ease-in-out;
+  
+}
+
+.round-pic:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  transition: .5s; 
+ transform:rotate(7deg);
+-ms-transform:rotate(7deg); /* IE 9 */
+-webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+  
+}
+
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }  
+ 
+.rotate:hover  
+{
+    -webkit-transform:rotate(7deg);
+    -moz-transform:rotate(7deg);
+    -o-transform:rotate(7deg);
+}

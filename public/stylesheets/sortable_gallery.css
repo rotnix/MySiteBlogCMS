@@ -1,0 +1,74 @@
+/*  CSS Document - lynda.com  */
+
+
+img.background{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+}
+
+.gallery{
+	width:80%;
+	
+	margin:20px auto;
+	position:relative;
+	background: rgba(72,72,72,0.4);
+	padding:10px 10px 10px 10px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.gallery .sorting{
+	/*margin: 0px 0px 15px 0px;
+	border: 1px solid #6d4d2e;
+	background-color:rgba(109,77,46,.3);*/
+}
+.gallery .sorting span{
+	padding: 0px 20px 0px 0px;
+	color: #fefefe;
+	font-style:italic;
+}
+.gallery .sorting div{
+	margin:10px 0px 10px 10px;
+}
+.gallery .sorting a{
+	color:#fff;
+	font-size:.85em;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:3px 20px 3px 20px;
+	
+}
+.gallery .sorting a:hover{color:#0493bd;}
+.gallery .sorting a.selected{color:#0493bd; /*background-image:url(../images/check_selected.gif);*/}
+
+.gallery .photos .thumbnail_container{position:relative;}
+.gallery .photos .thumbnail_container a.thumbnail{position:absolute;}
+.gallery .photos .thumbnail_container a.thumbnail img{
+	width:75px;
+	height:75px;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.clear_both {clear:both; line-height:1px;}
+
+
+
+/*Horizontal*/
+@media screen and (min-width:50px) and (max-width:500px) { 
+	
+	/*body{padding:5px 0px 0px 5px;}*/
+	.gallery{width:auto; margin-left:35px;}
+	.gallery .sorting span {display:block; color:#e5aa2c; padding: 0px 0px 20px 0px;}
+	.gallery .sorting a {display:block;}
+}
+@media screen and (min-width:501px) and (max-width:960px) { 
+	
+	.gallery .sorting span {display:block; padding: 0px 0px 20px 0px;}
+	.gallery .sorting a {display:block; width:35%; float:left; margin-bottom:5px;}
+}
+@media screen and (min-width:961px) { 
+	
+	.gallery .sorting span { padding: 0px 20px 0px 0px;}
+}

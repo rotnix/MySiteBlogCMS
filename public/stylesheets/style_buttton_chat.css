@@ -1,0 +1,75 @@
+/*  LocationButton
+================================================== */
+.chat{
+visibility:hidden
+}
+
+.chatbutton{
+	right:0px;
+	top:160px;
+    position: fixed;
+    width: 0%;
+    min-width: 40px;
+    height: 40px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    background: rgba(0,0,0,0.3);
+}
+.chatbutton-hide{
+	right:0px;
+	top:160px;
+    position: fixed;
+    width: 0%;
+    min-width: 40px;
+    height: 40px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+   /* background: rgba(0,0,0,0.3);*/
+}
+.chat-overlay{
+	position: absolute;
+    top: 0;
+    right: 0px;
+    border: none;
+    outline: none;
+    /*background: rgba(0,0,0,0.3);*/
+    background: #272725;
+    width: 40px;
+    height: 40px;
+    }
+
+.chat-icon{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;    
+   /* color: rgba(211, 104, 104, 0.9);*/
+}
+
+.chat-icon:before {
+    content: "";
+    
+}
+
+.chat-open{
+    width: 290px;
+    height: 250px;
+   /* z-index: 11;*/
+
+}
+

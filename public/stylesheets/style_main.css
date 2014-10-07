@@ -1,0 +1,201 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('http://fonts.googleapis.com/css?family=Esteban');
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css);
+
+
+body {	
+	background: black url('../images/wallpaper.jpg') no-repeat center center fixed; 
+	margin: 0;
+	padding: 0;
+	height: 100%;
+  	width: 100%;
+	color: white;
+	font: .9rem/1.6 Esteban, sans-serif;
+
+	/*Multi Browser Background Possitioning */	  
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+ 	/*Smother Fonts #IE not Supported Jet */ 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+a:link, a:visited {
+	color: #64adb5; /* #64adb5 */
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: #bbb; /* #333 */
+}
+
+ul.reset, ul.reset li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+
+
+#logo a {
+	background: url("../images/fixedlogo3.png") no-repeat;
+	float: left;
+	display: block;
+	width: 185px;
+	height: 175px;
+	margin-bottom: 5px;
+}
+
+#main-container {
+        width: 100%;
+        margin: 0 auto;
+}
+
+
+#content-wrapper {
+        float: left;
+        width: 100%;
+	/*for footer position*/
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin-bottom: 0px;
+		}
+
+#content-container{
+        margin-left: 175px;
+}
+
+#leftcolumn {
+		position: fixed;
+        float: left;
+        width: 175px;
+		height: 100%;
+     }
+
+#footer {
+	padding: 10px 0px 10px 0px;
+	margin-left:175px ;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+	font-size: 12px;
+	/*height: 10px;*/
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+  /* Article Styling
+================================================== */
+
+/* First Letter Big */
+.big-first-letter:first-of-type:first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 2.8rem;
+  margin-right: 10px;
+}
+
+
+/* Dot Dot Dot Seperator */
+hr.style1 { 
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 0;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow:
+    -15px 0 0 #bbb,
+    15px 0 0 #bbb;
+}
+
+
+hr.style2 { 
+  height:1px;
+  border:none;
+  background-color:#BBBBBB;
+  border-radius:2px;
+
+ 
+  transition: all .5s ease;
+   
+}
+
+/* Article Container */ 
+article {
+	min-width: 300px;
+	max-width: 500px;
+	margin: 0 auto; 
+	margin-top: 20px;	
+	padding: 10px 10px 10px 10px;
+	background: rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  /*text-shadow:5px 5px 5px #000000;*/
+  margin: 0 0 2px;
+ font-family: Quicksand;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: .9rem;
+  font-weight: 400;
+  color: #bbb;
+}
+
+
+.form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 850px;
+	float: left;
+	left: 50px;
+	position: absolute;
+ 	margin-top:30px;
+	margin-left: 200px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.text-center {
+	text-align:center;	
+}
+
+
+
+.text-right{
+	/*text-align:right;*/
+	float: right;
+	padding-right: 4px;
+	 
+}
+.article-menu-offset{
+	vertical-align: baseline ;
+	font-size: 15px;
+	padding-right: 11px;
+	
+	}

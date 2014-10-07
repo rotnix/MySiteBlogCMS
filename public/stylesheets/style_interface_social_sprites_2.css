@@ -1,0 +1,60 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css);
+
+
+
+.social_sprites_2{
+  width: 100%;
+  text-align: center;
+}
+.ic {
+  display: inline-block;
+  color: #999;
+  border: 0px solid #999;
+  border-radius: 10%;
+  padding-top: 3px;
+  padding-right: 0px;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.anim-twitter:hover {
+  -webkit-animation: twitterAnim 0.4s normal forwards linear;
+}
+.anim-facebook:hover {
+  -webkit-animation: facebookAnim 0.4s normal forwards linear;
+}
+.anim-googleplus:hover {
+  -webkit-animation: googleplusAnim 0.4s normal forwards linear;
+}
+.anim-linkedin:hover {
+  -webkit-animation: linkedinAnim 0.4s normal forwards linear;
+}
+@-webkit-keyframes twitterAnim {
+  100% {
+    background: rgba(0, 150, 255, 0.5);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+@-webkit-keyframes facebookAnim {
+  100% {
+    background: rgba(72, 96, 163, 0.5);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+@-webkit-keyframes googleplusAnim {
+  100% {
+    background: #cc181e;
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+@-webkit-keyframes linkedinAnim {
+  100% {
+    background: rgba(38, 38, 38, 0.5);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}

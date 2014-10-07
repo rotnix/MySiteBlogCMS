@@ -1,0 +1,44 @@
+#pg
+{
+	display:inline-block;    
+}
+
+#pg-num-input{
+display: inline-block;
+text-align: center;	
+width: 30px;
+height: 30px;
+border-radius: 7px;	
+/*background: rgba(0,0,0,0.4)*/
+}
+
+#pg-pre{
+display: inline-block;
+cursor: pointer;
+font-size: 35px;
+margin-right: 8px;
+vertical-align: middle;
+
+}
+
+#pg-next
+{
+display: inline-block;
+cursor: pointer;
+font-size: 35px;
+margin-left: 8px;
+vertical-align: middle;
+    
+}
+
+.pg-total
+{
+display: inline-block;
+font-size:15px;
+margin-left: 5px;
+vertical-align: middle;
+}
+
+.disabled{
+	color: rgba(0, 0, 0, 0.4);
+	 }
