@@ -40,8 +40,38 @@ public $category;
 	$sql .= " ON category.id=list_articlecategory.category_id";
 	$sql .= " WHERE list_articlecategory.article_id={$article_id}";
 	$sql .= " ORDER BY category";	
-	//echo $sql;
+//print($sql);
    	return self::find_by_sql($sql);
+	}
+	
+	
+	public static function find_article_on_category($category_id=24,$per_page,$paginationoffset) {
+    global $database;
+	
+	$sql = "SELECT  article.id, category.id, list_articlecategory.article_id, list_articlecategory.category_id, category.category FROM ". self::$list_articlecategory_table_name;
+	$sql .= " INNER JOIN ". self::$article_table_name;
+	$sql .= " ON article.id=list_articlecategory.article_id";
+	$sql .= " INNER JOIN ". self::$category_table_name;
+	$sql .= " ON category.id=list_articlecategory.category_id";
+	$sql .= " WHERE list_articlecategory.category_id={$category_id}";
+	//$sql .= " ORDER BY category";
+	$sql .= " LIMIT {$per_page}";
+	$sql .= " OFFSET {$paginationoffset}";	
+	//echo $sql;
+  
+   	return self::find_by_sql($sql);
+  
+	}
+	
+	
+	public static function count_by_id($category_id) {
+	  global $database;
+	  $sql = "SELECT COUNT(*) FROM list_articlecategory";
+	  $sql .= " WHERE category_id={$category_id}";
+	  //echo $sql;
+    $result_set = $database->query($sql);
+	  $row = $database->fetch_array($result_set);
+    return array_shift($row);
 	}
 	
 	
@@ -221,7 +251,7 @@ public static function find_all() {
 	  $sql = "DELETE FROM ".self::$list_articlecategory_table_name;
 	  $sql .= " WHERE category_id=". $database->escape_value($this->id);
 	  $sql .= " LIMIT 1";
-	  echo $sql;
+	  //echo $sql;
 	  $database->query($sql);
 	  return ($database->affected_rows() == 1) ? true : false;
 	
@@ -243,7 +273,7 @@ public static function find_all() {
 	  $sql = "DELETE FROM ".self::$category_table_name;
 	  $sql .= " WHERE id=". $database->escape_value($this->id);
 	  $sql .= " LIMIT 1";
-	  echo $sql;
+	  //echo $sql;
 	  $database->query($sql);
 	  return ($database->affected_rows() == 1) ? true : false;
 	

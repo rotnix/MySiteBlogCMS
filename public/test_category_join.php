@@ -20,19 +20,10 @@
 		//echo createcategory(1);			
 		*/	?>
 	<?php   
-echo "<h2>List all</h2>";
-	 $category = Category::find_category_on_article($article_id=1);	
+echo "<h2>List 1all</h2>";
+	 $category = Category::find_category_on_article();	
 	 
-	  
-	print_r($category);	
-	echo "<br>";
-		foreach($category as $category):
-			//echo "<div id=\"category\"><a href='category.php?category=$category->id'>#".$category->category." </a></div>";	
-			echo "string:".$category->id." ";
-			echo "category: ".$category->category;
-		
-				
-		endforeach;	 // ENDOF List Categories by Article
+
 				
 			?>
 

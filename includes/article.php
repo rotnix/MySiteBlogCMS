@@ -72,6 +72,14 @@ EMAILBODY;
 	public static function find_all() {
 		return self::find_by_sql("SELECT * FROM ".self::$table_name);
   }
+	
+	public static function find_all_pagination($per_page, $paginationoffset) {
+		$sql = "SELECT * FROM ".self::$table_name;
+		$sql .= " LIMIT {$per_page}";
+		$sql .= " OFFSET {$paginationoffset}";	
+		
+		return self::find_by_sql($sql);
+  }
   
   public static function find_by_id($id) {
     $result_array = self::find_by_sql("SELECT * FROM ".self::$table_name." WHERE id={$id} LIMIT 1");
@@ -95,6 +103,9 @@ EMAILBODY;
 	  $row = $database->fetch_array($result_set);
     return array_shift($row);
 	}
+	
+
+	
 
 	private static function instantiate($record) {
 		// Could check that $record exists and is an array

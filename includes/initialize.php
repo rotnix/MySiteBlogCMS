@@ -8,7 +8,7 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 // xampp\htdocs\PhotoGallery\photogallery\includes
 defined('SITE_ROOT') ? null : 
-	define('SITE_ROOT',DS.'var'.DS.'www'.DS.'html'.DS.'My'.DS.'MySiteTest');
+	define('SITE_ROOT',DS.'var'.DS.'www'.DS.'html'.DS.'MySiteBlogCMS');
 
 defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'includes');
 
@@ -26,7 +26,11 @@ require_once(LIB_PATH.DS.'database_object.php');
 
 // load database-related classes
 require_once(LIB_PATH.DS.'article.php');
+require_once(LIB_PATH.DS.'category.php');
 require_once(LIB_PATH.DS.'user.php');
 require_once(LIB_PATH.DS.'session.php');
 require_once(LIB_PATH.DS.'include_photo_comment.php');
+
+
+
 ?>
